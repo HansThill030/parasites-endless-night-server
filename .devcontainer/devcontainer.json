@@ -1,0 +1,10 @@
+{
+  "name": "Parasites Endless Night Server",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "forwardPorts": [25565, 30037],
+  "portsAttributes": {
+    "25565": { "label": "Minecraft Server", "onAutoForward": "notify" },
+    "30037": { "label": "AutoModpack Host", "onAutoForward": "silent" }
+  },
+  "postCreateCommand": "bash scripts/setup.sh"
+}
