@@ -1,0 +1,31 @@
+{
+	# When enabled, players will be able to use beds in the nether.
+	# Default: false
+	allow_beds_in_the_nether: false
+	
+	# When enabled, light sources near spawners will be broken to allow for mob spawning.
+	# Default: false
+	break_light_sources_near_spawners: false
+	
+	# If non-zero, set the jigsaw feature size limit to this value.
+	# Default: 0
+	# Range: 0 ~ 256
+	extended_jigsaw_range: 0
+	
+	# When enabled, the light level around spawners will be ignored for mob spawning.
+	# Default: false
+	ignore_light_level_for_spawners: false
+	forced-game-rules: {
+		# Game rules that are forced on the server. The keys must be valid game rule IDs.
+		rules: { }
+	}
+	shaders_notice: {
+		# The shader pack to use when enabling shaders. Leave empty to use the default shader pack / first available shader pack in the list
+		# Default: ""
+		shader_pack_to_use: ""
+		
+		# When enabled, the shaders notice will be shown on world start if shaders are included in the pack.
+		# Default: false
+		show_on_start: false
+	}
+}

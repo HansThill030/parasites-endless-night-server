@@ -1,0 +1,18 @@
+{
+	actions: [
+		{
+			icon: "ftblibrary:icons/globe"
+			name: "ftbpackcompanion.spawn"
+			command_action: {
+				command: "/spawn"
+			}
+		}
+		{
+			icon: "ftblibrary:icons/compass"
+			name: "ftbpackcompanion.home"
+			command_action: {
+				command: "/home"
+			}
+		}
+	]
+}

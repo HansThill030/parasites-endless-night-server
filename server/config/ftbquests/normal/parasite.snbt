@@ -1,0 +1,183 @@
+{
+	always_invisible: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "parasite"
+	group: ""
+	icon: "minecraft:rotten_flesh"
+	id: "0000000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&e&lE-PCA: End-Parasitize and Convert All&r"
+				""
+				"Voce percebe algo errado no mundo. Criaturas que nao deveriam existir comecam a aparecer, se movendo de forma anormal, contaminando tudo que tocam."
+				""
+				"Os &4Parasitas&r nao sao mobs comuns. Eles sao manifestacoes de deuses externos, e quando matam ou infectam outra criatura, ela se torna um novo parasita. A infeccao se espalha em cadeia, e so piora com o tempo."
+				""
+				"Este capitulo vai te guiar pela ameaca do E-PCA: como sobreviver ao primeiro contato, entender a mecanica de infeccao, e eventualmente enfrentar - ou se tornar - algo alem do humano."
+			]
+			icon: "minecraft:rotten_flesh"
+			id: "0000000000000101"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "0000000000000102"
+					type: "checkmark"
+				}
+			]
+			title: "A Infeccao Comeca"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000101"]
+			description: [
+				"Os parasitas comuns sao fracos individualmente, mas perigosos em grupo - cada morte pode gerar um novo parasita."
+				""
+				"Nesta fase inicial, o fogo e sua melhor arma. Prepare magma e armas que causam dano de fogo - elas matam parasitas de forma confiavel, e continuam uteis ate o meio do jogo."
+				""
+				"Encontre e observe um Parasita pela primeira vez. Cuidado ao se aproximar."
+			]
+			icon: "minecraft:blaze_powder"
+			id: "0000000000000103"
+			rewards: [
+				{
+					count: 4
+					id: "0000000000000104"
+					item: "minecraft:flint_and_steel"
+					type: "item"
+				}
+			]
+			shape: ""
+			size: 1.5d
+			tasks: [
+				{
+					icon: "minecraft:magma_block"
+					id: "0000000000000105"
+					item: "minecraft:magma_block"
+					type: "item"
+				}
+			]
+			title: "Primeiro Contato"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000103"]
+			description: [
+				"Fogo funciona, mas voce vai precisar de mais que isso pra sobreviver ao aumento da infeccao."
+				""
+				"Prepare armas capazes de causar dano de fogo consistente - tochas de magma, espadas encantadas com Fogo, ou ferramentas do proprio E-PCA se ja tiver acesso a elas."
+				""
+				"Dica: mantenha distancia de aglomerados de parasitas. Um contra um e gerenciavel; um enxame pode te dominar rapido."
+			]
+			icon: "minecraft:fire_charge"
+			id: "0000000000000106"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					icon: "minecraft:fire_charge"
+					id: "0000000000000107"
+					item: "minecraft:fire_charge"
+					type: "item"
+				}
+				{
+					icon: "minecraft:golden_sword"
+					id: "0000000000000108"
+					item: {
+						Count: 1
+						id: "minecraft:golden_sword"
+						tag: {
+							Enchantments: [
+								{
+									id: "minecraft:fire_aspect"
+									lvl: 1
+								}
+							]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Armado Contra o Fogo"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000103"]
+			description: [
+				"A infeccao no E-PCA funciona por acumulo de &6biomassa&r."
+				""
+				"Estruturas chamadas &6Beckon Core&r acumulam pontos de biomassa ao longo do tempo. Quando o limite e atingido, elas entram em Overload Mode e se tornam significativamente mais perigosas, convertendo blocos ao redor."
+				""
+				"Se voce encontrar uma dessas estruturas, NAO ignore. Ela vai continuar acumulando poder enquanto existir."
+			]
+			icon: "minecraft:redstone_block"
+			id: "0000000000000109"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0000000000000110"
+					type: "checkmark"
+				}
+			]
+			title: "Beckon Core: A Fonte da Infeccao"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000106", "0000000000000109"]
+			description: [
+				"Sobreviver ao contato inicial e uma coisa. Conter a infeccao e outra completamente diferente."
+				""
+				"No meio-jogo, o E-PCA introduz estruturas de &6altar multi-bloco&r, que permitem craftar itens muito mais poderosos e conceder buffs relevantes contra os parasitas."
+				""
+				"Construa seu primeiro altar e comece a entender a verdadeira escala da ameaca que voce enfrenta."
+			]
+			icon: "minecraft:enchanting_table"
+			id: "0000000000000111"
+			shape: "circle"
+			size: 2.0d
+			tasks: [
+				{
+					id: "0000000000000112"
+					type: "checkmark"
+				}
+			]
+			title: "O Altar"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000111"]
+			description: [
+				"Voce sobreviveu ao inicio. Conteve a propagacao local. Construiu seus primeiros itens de altar."
+				""
+				"Mas isso e apenas o comeco. No late-game, o E-PCA revela sua verdadeira natureza: para resistir ao poder terrivel dos parasitas, voce precisara negociar com deuses - ou se tornar um deus voce mesmo."
+				""
+				"Essa e a jornada completa do End-Parasitize and Convert All. Continue explorando, continue se fortalecendo, e nunca subestime a infeccao."
+			]
+			icon: "minecraft:nether_star"
+			id: "0000000000000113"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "0000000000000114"
+					type: "checkmark"
+				}
+			]
+			title: "Tornar-se um Deus"
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	title: "Parasite"
+}

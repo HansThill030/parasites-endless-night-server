@@ -1,0 +1,291 @@
+{
+  "deer": {
+    "weight": 12,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "roe_deer": {
+    "weight": 12,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "doe": {
+    "weight": 12,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "caribou": {
+    "weight": 10,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "moose": {
+    "weight": 4,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "duck": {
+    "weight": 10,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "drake": {
+    "weight": 10,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "goose": {
+    "weight": 10,
+    "minAmount": 2,
+    "maxAmount": 4
+  },
+  "pheasant": {
+    "weight": 15,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "quail": {
+    "weight": 15,
+    "minAmount": 2,
+    "maxAmount": 4
+  },
+  "yak": {
+    "weight": 8,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "highland_cow": {
+    "weight": 8,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "wisent": {
+    "weight": 4,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "short_haired_goat": {
+    "weight": 8,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "brown_bear": {
+    "weight": 8,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "boar": {
+    "weight": 12,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "lynx": {
+    "weight": 8,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "badger": {
+    "weight": 8,
+    "minAmount": 1,
+    "maxAmount": 1
+  },
+  "wild_wolf": {
+    "weight": 8,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "beaver": {
+    "weight": 10,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "hare": {
+    "weight": 12,
+    "minAmount": 2,
+    "maxAmount": 4
+  },
+  "eel": {
+    "weight": 60,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "sturgeon": {
+    "weight": 20,
+    "minAmount": 1,
+    "maxAmount": 1
+  },
+  "pike_fish": {
+    "weight": 70,
+    "minAmount": 3,
+    "maxAmount": 5
+  },
+  "pollock": {
+    "weight": 70,
+    "minAmount": 3,
+    "maxAmount": 5
+  },
+  "herring": {
+    "weight": 80,
+    "minAmount": 7,
+    "maxAmount": 10
+  },
+  "trout": {
+    "weight": 70,
+    "minAmount": 3,
+    "maxAmount": 5
+  },
+  "carp": {
+    "weight": 70,
+    "minAmount": 3,
+    "maxAmount": 5
+  },
+  "bass": {
+    "weight": 70,
+    "minAmount": 3,
+    "maxAmount": 5
+  },
+  "mackerel": {
+    "weight": 80,
+    "minAmount": 8,
+    "maxAmount": 10
+  },
+  "sardine": {
+    "weight": 80,
+    "minAmount": 8,
+    "maxAmount": 10
+  },
+  "perches": {
+    "weight": 70,
+    "minAmount": 3,
+    "maxAmount": 5
+  },
+  "zander": {
+    "weight": 70,
+    "minAmount": 3,
+    "maxAmount": 5
+  },
+  "roach": {
+    "weight": 80,
+    "minAmount": 3,
+    "maxAmount": 5
+  },
+  "halibut": {
+    "weight": 70,
+    "minAmount": 3,
+    "maxAmount": 5
+  },
+  "catfish": {
+    "weight": 20,
+    "minAmount": 1,
+    "maxAmount": 1
+  },
+  "narwhal": {
+    "weight": 12,
+    "minAmount": 2,
+    "maxAmount": 5
+  },
+  "whale": {
+    "weight": 10,
+    "minAmount": 1,
+    "maxAmount": 5
+  },
+  "orca": {
+    "weight": 10,
+    "minAmount": 1,
+    "maxAmount": 2
+  },
+  "white_shark": {
+    "weight": 12,
+    "minAmount": 1,
+    "maxAmount": 2
+  },
+  "swordfish": {
+    "weight": 20,
+    "minAmount": 1,
+    "maxAmount": 2
+  },
+  "great_auk": {
+    "weight": 12,
+    "minAmount": 2,
+    "maxAmount": 4
+  },
+  "razorbill": {
+    "weight": 12,
+    "minAmount": 2,
+    "maxAmount": 4
+  },
+  "pigeon": {
+    "weight": 20,
+    "minAmount": 4,
+    "maxAmount": 6
+  },
+  "stork": {
+    "weight": 12,
+    "minAmount": 2,
+    "maxAmount": 2
+  },
+  "crane": {
+    "weight": 12,
+    "minAmount": 2,
+    "maxAmount": 2
+  },
+  "kestrel": {
+    "weight": 4,
+    "minAmount": 1,
+    "maxAmount": 1
+  },
+  "loon": {
+    "weight": 12,
+    "minAmount": 2,
+    "maxAmount": 4
+  },
+  "partridge": {
+    "weight": 12,
+    "minAmount": 2,
+    "maxAmount": 4
+  },
+  "bullfinch": {
+    "weight": 12,
+    "minAmount": 2,
+    "maxAmount": 4
+  },
+  "nightingale": {
+    "weight": 15,
+    "minAmount": 3,
+    "maxAmount": 5
+  },
+  "raven": {
+    "weight": 10,
+    "minAmount": 1,
+    "maxAmount": 3
+  },
+  "hawk": {
+    "weight": 4,
+    "minAmount": 1,
+    "maxAmount": 1
+  },
+  "eagle": {
+    "weight": 4,
+    "minAmount": 1,
+    "maxAmount": 1
+  },
+  "deagle": {
+    "weight": 1,
+    "minAmount": 1,
+    "maxAmount": 1
+  },
+  "owl": {
+    "weight": 12,
+    "minAmount": 1,
+    "maxAmount": 2
+  },
+  "gift_list": {
+    "gifts": [
+      "minecraft:feather;1;0.3",
+      "minecraft:iron_nugget;1;0.1",
+      "minecraft:gold_nugget;1;0.2",
+      "minecraft:stick;1;0.05"
+    ],
+    "cooldown": 3600
+  }
+}
