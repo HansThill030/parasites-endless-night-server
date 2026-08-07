@@ -1,0 +1,13 @@
+# Mundo e dados de sessão
+server/world/
+server/logs/
+server/crash-reports/
+
+# Libraries geradas pelo installer do Forge (reconstrói sozinho)
+server/libraries/
+
+# Configs de sessão do AutoModpack
+server/automodpack/*.log
+
+# Cache do playit
+playit.toml
