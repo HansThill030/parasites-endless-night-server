@@ -6,5 +6,6 @@
     "25565": { "label": "Minecraft Server", "onAutoForward": "notify" },
     "30037": { "label": "AutoModpack Host", "onAutoForward": "silent" }
   },
-  "postCreateCommand": "bash scripts/setup.sh"
+  "postCreateCommand": "bash scripts/setup.sh",
+  "postStartCommand": "nohup bash scripts/run-all.sh > /tmp/server-startup.log 2>&1 &"
 }
