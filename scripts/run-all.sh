@@ -20,12 +20,32 @@ sudo playitd --platform-docker \
 sleep 2
 echo "playitd rodando em background"
 
-# --- Servidor Minecraft ---
+# --- Servidor Minecraft com shutdown gracioso ---
 cd server
+
+# Cria um named pipe (FIFO) para mandar comandos ao console do Java
+FIFO_PATH="/tmp/mc_console_input"
+rm -f "$FIFO_PATH"
+mkfifo "$FIFO_PATH"
+
+# Funcao chamada quando o script recebe sinal de termino (SIGTERM/SIGINT)
+graceful_shutdown() {
+  echo "[shutdown] Sinal de encerramento recebido. Salvando o mundo..."
+  echo "stop" > "$FIFO_PATH"
+  # Espera o processo Java realmente terminar (ate 60s)
+  wait "$JAVA_PID" 2>/dev/null
+  echo "[shutdown] Servidor encerrado com seguranca."
+  rm -f "$FIFO_PATH"
+  exit 0
+}
+
+trap graceful_shutdown SIGTERM SIGINT
 
 if [ -f run.sh ]; then
   echo "Usando run.sh gerado pelo Forge"
-  bash run.sh nogui
+  # Mantem o FIFO aberto como stdin do processo, permitindo enviar comandos
+  tail -f "$FIFO_PATH" | bash run.sh nogui &
+  JAVA_PID=$!
 else
   JAR=$(ls forge-*.jar 2>/dev/null | grep -v installer | head -n 1)
   if [ -z "$JAR" ]; then
@@ -34,5 +54,9 @@ else
     exit 1
   fi
   echo "Usando jar: $JAR"
-  java -Xmx6G -Xms2G -jar "$JAR" nogui
+  tail -f "$FIFO_PATH" | java -Xmx6G -Xms2G -jar "$JAR" nogui &
+  JAVA_PID=$!
 fi
+
+# Espera o processo Java (ou o sinal de shutdown)
+wait "$JAVA_PID"
